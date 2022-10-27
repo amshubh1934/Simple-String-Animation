@@ -23,13 +23,13 @@ int main(){
   while(flag){
     int i = 0;
     for(;i < (int)arr.size();i++){
-      char old = arr[i];
+      char curr = arr[i];
       arr[i] = toupper(old);
       string str = join(arr,(int)arr.size());
       cout <<"\r";
       cout <<str;
       cout <<flush;
-      arr[i] = old;
+      arr[i] = curr;
       usleep(1000000);
     }
   }
