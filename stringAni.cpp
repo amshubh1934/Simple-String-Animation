@@ -24,7 +24,7 @@ int main(){
     int i = 0;
     for(;i < (int)arr.size();i++){
       char curr = arr[i];
-      arr[i] = toupper(old);
+      arr[i] = toupper(curr);
       string str = join(arr,(int)arr.size());
       cout <<"\r";
       cout <<str;
